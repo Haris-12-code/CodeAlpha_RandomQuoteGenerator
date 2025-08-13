@@ -1,0 +1,32 @@
+:root{
+  --bg:#0f1220; --panel:#171a2b; --text:#e9ecff; --muted:#98a0c6;
+  --border:#242840; --accent:#6d7cff;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0; font-family:Inter,system-ui,Arial;
+  background:radial-gradient(1200px 600px at 80% -10%, #1b2050 0%, #0f1220 50%), var(--bg);
+  color:var(--text);
+}
+.wrap{max-width:760px; margin:40px auto; padding:0 16px}
+.top{display:flex; align-items:center; justify-content:space-between; margin-bottom:16px}
+h1{font-size:28px; margin:0}
+.badge{font-size:12px; border:1px solid var(--border); color:var(--muted); padding:6px 10px; border-radius:999px}
+
+.card{
+  background:linear-gradient(180deg, rgba(255,255,255,.02), transparent), var(--panel);
+  border:1px solid var(--border); border-radius:18px; padding:24px;
+  box-shadow:0 20px 60px rgba(0,0,0,.25), inset 0 1px 0 rgba(255,255,255,.03)
+}
+.quote{font-size:24px; line-height:1.5; font-weight:800; letter-spacing:.2px}
+.author{margin-top:10px; color:var(--muted); font-weight:600}
+.controls{display:flex; gap:10px; margin-top:16px; flex-wrap:wrap}
+button{
+  appearance:none; border:1px solid var(--border); background:#141836; color:var(--text);
+  padding:10px 14px; border-radius:12px; font-weight:600; cursor:pointer; transition:.15s; font-size:14px
+}
+button:hover{transform:translateY(-1px); border-color:#3a3f62}
+.primary{background:linear-gradient(180deg, rgba(255,255,255,.05), transparent), var(--accent); border-color:transparent}
+.status{margin-top:8px; color:var(--muted); font-size:13px}
+.footer{margin-top:18px; text-align:center; color:var(--muted); font-size:12px}
