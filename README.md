@@ -1,4 +1,3 @@
-Testing DevGuard AI code review.
 # Random Quote Generator
 
 A Random Quote Generator web app built for CodeAlpha Internship Task 2.  
